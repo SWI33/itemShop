@@ -1,8 +1,7 @@
 import express from "express";
-import products from "../data/products";
 const router = express.Router();
 import asyncHandler from "express-async-handler";
-import Product from "../models/productModel";
+import Product from "../models/productModel.js";
 
 // @desc Fetch all products
 // @route GET /api/products
@@ -16,7 +15,7 @@ router.get(
 );
 
 // @desc Fetch single products
-// @route GET /api/products
+// @route GET /api/products/:id
 // @access Public
 
 router.get(
