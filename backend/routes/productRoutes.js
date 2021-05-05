@@ -32,4 +32,4 @@ router.get(
   })
 );
 
-export default Router;
+export default router;
